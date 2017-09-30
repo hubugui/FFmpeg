@@ -23,6 +23,10 @@
  * multimedia converter based on the FFmpeg libraries
  */
 
+#ifndef WIN32_LEAN_AND_MEAN
+#define WIN32_LEAN_AND_MEAN
+#endif
+
 #include "config.h"
 #include <ctype.h>
 #include <string.h>
@@ -80,6 +84,7 @@
 #include <windows.h>
 #include <psapi.h>
 #endif
+
 #if HAVE_SETCONSOLECTRLHANDLER
 #include <windows.h>
 #endif
